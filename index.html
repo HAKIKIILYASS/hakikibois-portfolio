@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="حقيقي بويز - متخصصون في صناعة الأثاث الخشبي الفاخر. تصاميم مخصصة، جودة عالية وخدمة احترافية في الدار البيضاء">
+<meta name="keywords" content="أثاث خشبي, أثاث فاخر, تصميم داخلي, نجارة, أثاث منزلي, طاولات خشبية, كراسي, خزائن, مطابخ خشبية, أبواب خشبية, الدار البيضاء">
+<title>حقيقي بويز - أثاث خشبي فاخر</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Poppins', sans-serif; }
+.heading { font-family: 'Playfair Display', serif; }
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+@keyframes slideInRight {
+from {
+opacity: 0;
+transform: translateX(50px);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+.animate-fadeInUp {
+animation: fadeInUp 0.6s ease-out forwards;
+}
+.animate-slideInRight {
+animation: slideInRight 0.6s ease-out forwards;
+}
+.scroll-animate {
+opacity: 0;
+}
+.scroll-animate.active {
+opacity: 1;
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#C19A6B',
+secondary: '#8B7355'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+<nav class="fixed top-0 w-full bg-gray-800/95 backdrop-blur-sm z-50 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+<a href="#" class="font-['Pacifico'] text-2xl text-primary">Hakikibois</a>
+<button id="menuBtn" class="w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</div>
+<div id="mobileMenu" class="hidden bg-gray-800 absolute w-full">
+<div class="px-4 py-2">
+<a href="#home" class="block py-2">Home</a>
+<a href="#portfolio" class="block py-2">Portfolio</a>
+<a href="#about" class="block py-2">About</a>
+<a href="#contact" class="block py-2">Contact</a>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<section id="hero" class="relative h-[500px]">
+<img src="https://public.readdy.ai/ai/img_res/205b7375f1e522e0a78c3bb3d7948271.jpg"
+class="w-full h-full object-cover" loading="lazy" alt="Luxury Wooden Furniture">
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center px-4">
+<div>
+<h1 class="heading text-4xl font-bold text-white mb-4">نصنع تحف خشبية خالدة</h1>
+<p class="text-white/90 mb-8">حيث تلتقي الطبيعة بالفخامة في كل التفاصيل</p>
+<a href="#portfolio" class="bg-primary text-white px-8 py-3 !rounded-button inline-block hover:bg-primary/90 transition-colors">
+اكتشف أعمالنا
+</a>
+</div>
+</div>
+</section>
+<section id="features" class="py-12 px-4">
+<h2 class="heading text-2xl font-semibold text-center mb-8">خبراتنا</h2>
+<div class="grid grid-cols-2 gap-6">
+<div class="text-center">
+<div class="w-16 h-16 mx-auto mb-4 bg-secondary/20 rounded-full flex items-center justify-center">
+<i class="ri-hammer-line text-2xl text-primary"></i>
+</div>
+<h3 class="font-medium mb-2">تصميم مخصص</h3>
+<p class="text-sm text-gray-400">مصمم حسب أسلوبك الفريد مع مراعاة كل التفاصيل الدقيقة</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto mb-4 bg-secondary/20 rounded-full flex items-center justify-center">
+<i class="ri-paint-brush-line text-2xl text-primary"></i>
+</div>
+<h3 class="font-medium mb-2">تشطيب فاخر</h3>
+<p class="text-sm text-gray-400">اهتمام رائع بالتفاصيل مع استخدام أفضل المواد والتقنيات</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto mb-4 bg-secondary/20 rounded-full flex items-center justify-center">
+<i class="ri-timer-line text-2xl text-primary"></i>
+</div>
+<h3 class="font-medium mb-2">خدمة سريعة</h3>
+<p class="text-sm text-gray-400">التزام بالمواعيد وتسليم المشاريع في الوقت المحدد</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 mx-auto mb-4 bg-secondary/20 rounded-full flex items-center justify-center">
+<i class="ri-shield-check-line text-2xl text-primary"></i>
+</div>
+<h3 class="font-medium mb-2">ضمان الجودة</h3>
+<p class="text-sm text-gray-400">نقدم ضمان شامل على جميع منتجاتنا لمدة 5 سنوات</p>
+</div>
+</div>
+</section>
+<section id="portfolio" class="py-12 px-4 bg-gray-800">
+<div class="flex justify-between items-center mb-8">
+<h2 class="heading text-2xl font-semibold text-center">معرض أعمالنا</h2>
+<button id="addImageBtn" class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors flex items-center">
+<i class="ri-add-line ml-2"></i>
+إضافة صورة
+</button>
+</div>
+<div class="flex gap-2 mb-6 overflow-x-auto pb-2">
+<button class="category-btn px-4 py-2 !rounded-full bg-primary text-white whitespace-nowrap" data-category="all">الكل</button>
+<button class="category-btn px-4 py-2 !rounded-full bg-gray-700 text-white whitespace-nowrap hover:bg-gray-600" data-category="tables">طاولات</button>
+<button class="category-btn px-4 py-2 !rounded-full bg-gray-700 text-white whitespace-nowrap hover:bg-gray-600" data-category="chairs">كراسي</button>
+<button class="category-btn px-4 py-2 !rounded-full bg-gray-700 text-white whitespace-nowrap hover:bg-gray-600" data-category="beds">أسرّة</button>
+<button class="category-btn px-4 py-2 !rounded-full bg-gray-700 text-white whitespace-nowrap hover:bg-gray-600" data-category="cabinets">خزائن</button>
+<button class="category-btn px-4 py-2 !rounded-full bg-gray-700 text-white whitespace-nowrap hover:bg-gray-600" data-category="kitchen">مطابخ</button>
+<button class="category-btn px-4 py-2 !rounded-full bg-gray-700 text-white whitespace-nowrap hover:bg-gray-600" data-category="doors">أبواب</button>
+</div>
+<div id="portfolioGrid" class="grid grid-cols-2 gap-4">
+<div class="aspect-square overflow-hidden rounded relative group" data-category="kitchen">
+<img src="https://public.readdy.ai/ai/img_res/2a12d2d6a64cd2c3169c0bc138f875b8.jpg"
+class="w-full h-full object-cover" alt="تصميم مطبخ عصري">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="w-10 h-10 bg-white/20 !rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors deleteImageBtn">
+<i class="ri-delete-bin-line"></i>
+</button>
+<button class="w-10 h-10 bg-white/20 !rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors editImageBtn">
+<i class="ri-edit-line"></i>
+</button>
+</div>
+</div>
+<div class="aspect-square overflow-hidden rounded relative group" data-category="tables">
+<img src="https://public.readdy.ai/ai/img_res/6b1717ec2f22974bc6fed7b6a3b6d531.jpg"
+class="w-full h-full object-cover" alt="طاولة طعام خشبية">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="w-10 h-10 bg-white/20 !rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors deleteImageBtn">
+<i class="ri-delete-bin-line"></i>
+</button>
+<button class="w-10 h-10 bg-white/20 !rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors editImageBtn">
+<i class="ri-edit-line"></i>
+</button>
+</div>
+</div>
+<div class="aspect-square overflow-hidden rounded relative group" data-category="doors">
+<img src="https://public.readdy.ai/ai/img_res/1c9f20620de67726aa7bbbd653ea03ab.jpg"
+class="w-full h-full object-cover" alt="باب خشبي فاخر">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="w-10 h-10 bg-white/20 !rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors deleteImageBtn">
+<i class="ri-delete-bin-line"></i>
+</button>
+<button class="w-10 h-10 bg-white/20 !rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors editImageBtn">
+<i class="ri-edit-line"></i>
+</button>
+</div>
+</div>
+<!-- Repeat for other images -->
+</div>
+<!-- Add/Edit Image Modal -->
+<div id="imageModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center">
+<div class="bg-gray-800 rounded-lg p-6 w-[90%] max-w-lg">
+<h3 class="text-xl font-semibold mb-4" id="modalTitle">إضافة صورة جديدة</h3>
+<form id="imageForm">
+<div class="mb-4">
+<label class="block text-sm font-medium mb-1">عنوان الصورة</label>
+<input type="text" id="imageTitle" class="w-full px-4 py-2 rounded bg-gray-700 border-gray-600 text-white focus:border-primary focus:ring-primary" required>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium mb-1">الفئة</label>
+<select id="imageCategory" class="w-full px-4 py-2 rounded bg-gray-700 border-gray-600 text-white focus:border-primary focus:ring-primary">
+<option value="tables">طاولات</option>
+<option value="chairs">كراسي</option>
+<option value="beds">أسرّة</option>
+<option value="cabinets">خزائن</option>
+<option value="kitchen">مطابخ</option>
+<option value="doors">أبواب</option>
+</select>
+</div>
+<div class="mb-4">
+<label class="block text-sm font-medium mb-1">رابط الصورة</label>
+<input type="url" id="imageUrl" class="w-full px-4 py-2 rounded bg-gray-700 border-gray-600 text-white focus:border-primary focus:ring-primary" required>
+</div>
+<div class="flex justify-end gap-2">
+<button type="button" id="closeModal" class="px-4 py-2 bg-gray-700 text-white hover:bg-gray-600 !rounded-button">إلغاء</button>
+<button type="submit" class="px-4 py-2 bg-primary text-white hover:bg-primary/90 !rounded-button">حفظ</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script>
+// Portfolio Management with Local Storage
+const addImageBtn = document.getElementById('addImageBtn');
+const imageModal = document.getElementById('imageModal');
+const closeModal = document.getElementById('closeModal');
+const imageForm = document.getElementById('imageForm');
+const modalTitle = document.getElementById('modalTitle');
+let editingImageElement = null;
+// Initialize portfolio data structure
+const initializePortfolio = () => {
+  if (!localStorage.getItem('portfolio')) {
+    const defaultPortfolio = [
+      {
+        title: 'تصميم مطبخ عصري',
+        url: 'https://readdy.ai/api/search-image?query=luxury modern kitchen cabinet design, wooden finish, premium craftsmanship, professional product photography, neutral background&width=400&height=400&seq=7&orientation=squarish',
+        category: 'kitchen'
+      },
+      {
+        title: 'طاولة طعام خشبية',
+        url: 'https://readdy.ai/api/search-image?query=luxury wooden dining table, premium craftsmanship, professional product photography, neutral background&width=400&height=400&seq=2&orientation=squarish',
+        category: 'tables'
+      },
+      {
+        title: 'باب خشبي فاخر',
+        url: 'https://readdy.ai/api/search-image?query=luxury wooden door, premium craftsmanship, elegant design, professional product photography, neutral background&width=400&height=400&seq=3&orientation=squarish',
+        category: 'doors'
+      }
+    ];
+    localStorage.setItem('portfolio', JSON.stringify(defaultPortfolio));
+  }
+};
+// Load portfolio data from localStorage
+const loadPortfolio = () => {
+  initializePortfolio();
+  const portfolio = JSON.parse(localStorage.getItem('portfolio')) || [];
+  const portfolioGrid = document.getElementById('portfolioGrid');
+  portfolioGrid.innerHTML = '';
+  portfolio.forEach(item => {
+    const newImage = createPortfolioItem(item);
+    portfolioGrid.appendChild(newImage);
+  });
+};
+// Save portfolio data to localStorage
+const savePortfolio = () => {
+const portfolio = [];
+document.querySelectorAll('#portfolioGrid > div').forEach(item => {
+const img = item.querySelector('img');
+portfolio.push({
+title: img.alt,
+url: img.src,
+category: item.dataset.category
+});
+});
+localStorage.setItem('portfolio', JSON.stringify(portfolio));
+};
+// Create portfolio item element
+const createPortfolioItem = (item) => {
+  const newImage = document.createElement('div');
+  newImage.className = 'aspect-square overflow-hidden rounded relative group';
+  newImage.dataset.category = item.category;
+  newImage.innerHTML = `
+    <img src="${item.url}" class="w-full h-full object-cover" loading="lazy" alt="${item.title}">
+    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+      <button class="w-10 h-10 bg-white/20 !rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors deleteImageBtn">
+        <i class="ri-delete-bin-line"></i>
+      </button>
+      <button class="w-10 h-10 bg-white/20 !rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors editImageBtn">
+        <i class="ri-edit-line"></i>
+      </button>
+    </div>
+  `;
+// Add event listeners
+  const deleteBtn = newImage.querySelector('.deleteImageBtn');
+  const editBtn = newImage.querySelector('.editImageBtn');
+  deleteBtn.addEventListener('click', () => {
+    if (!checkCode()) {
+      showToast('Invalid security code!', 'error');
+      return;
+    }
+    if(confirm('هل أنت متأكد من حذف هذه الصورة؟')) {
+      newImage.remove();
+      savePortfolio();
+      showToast('Image deleted successfully!', 'success');
+    }
+  });
+  editBtn.addEventListener('click', () => {
+    if (!checkCode()) {
+      showToast('Invalid security code!', 'error');
+      return;
+    }
+    modalTitle.textContent = 'تعديل الصورة';
+    document.getElementById('imageTitle').value = item.title;
+    document.getElementById('imageUrl').value = item.url;
+    document.getElementById('imageCategory').value = item.category;
+    imageModal.classList.remove('hidden');
+    imageModal.classList.add('flex');
+    editingImageElement = newImage;
+  });
+  return newImage;
+};
+// Helper function to show toast messages
+const showToast = (message, type = 'success') => {
+  const toast = document.createElement('div');
+  toast.className = `fixed bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full z-50 ${
+    type === 'success' ? 'bg-green-500' : 'bg-red-500'
+  } text-white`;
+  toast.textContent = message;
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), 3000);
+};
+// Load portfolio on page load
+document.addEventListener('DOMContentLoaded', loadPortfolio);
+const checkCode = () => {
+const code = prompt('Please enter security code:');
+return code === '3333';
+};
+addImageBtn.addEventListener('click', () => {
+if (!checkCode()) {
+const toast = document.createElement('div');
+toast.className = 'fixed bottom-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-full';
+toast.textContent = 'Invalid security code!';
+document.body.appendChild(toast);
+setTimeout(() => toast.remove(), 3000);
+return;
+}
+modalTitle.textContent = 'إضافة صورة جديدة';
+imageForm.reset();
+imageModal.classList.remove('hidden');
+imageModal.classList.add('flex');
+editingImageElement = null;
+});
+closeModal.addEventListener('click', () => {
+imageModal.classList.add('hidden');
+imageModal.classList.remove('flex');
+});
+document.querySelectorAll('.deleteImageBtn').forEach(btn => {
+btn.addEventListener('click', (e) => {
+if (!checkCode()) {
+const toast = document.createElement('div');
+toast.className = 'fixed bottom-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-full';
+toast.textContent = 'Invalid security code!';
+document.body.appendChild(toast);
+setTimeout(() => toast.remove(), 3000);
+return;
+}
+const imageContainer = e.target.closest('.aspect-square');
+if(confirm('هل أنت متأكد من حذف هذه الصورة؟')) {
+imageContainer.remove();
+}
+});
+});
+document.querySelectorAll('.editImageBtn').forEach(btn => {
+btn.addEventListener('click', (e) => {
+if (!checkCode()) {
+const toast = document.createElement('div');
+toast.className = 'fixed bottom-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-full';
+toast.textContent = 'Invalid security code!';
+document.body.appendChild(toast);
+setTimeout(() => toast.remove(), 3000);
+return;
+}
+const imageContainer = e.target.closest('.aspect-square');
+const img = imageContainer.querySelector('img');
+modalTitle.textContent = 'تعديل الصورة';
+document.getElementById('imageTitle').value = img.alt;
+document.getElementById('imageUrl').value = img.src;
+imageModal.classList.remove('hidden');
+imageModal.classList.add('flex');
+editingImageElement = imageContainer;
+});
+});
+// Category filtering
+document.querySelectorAll('.category-btn').forEach(btn => {
+btn.addEventListener('click', () => {
+// Remove active class from all buttons
+document.querySelectorAll('.category-btn').forEach(b => {
+b.classList.remove('bg-primary');
+b.classList.add('bg-gray-700');
+});
+// Add active class to clicked button
+btn.classList.remove('bg-gray-700');
+btn.classList.add('bg-primary');
+const category = btn.dataset.category;
+const items = document.querySelectorAll('#portfolioGrid > div');
+items.forEach(item => {
+if (category === 'all' || item.dataset.category === category) {
+item.style.display = 'block';
+} else {
+item.style.display = 'none';
+}
+});
+});
+});
+imageForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  const title = document.getElementById('imageTitle').value;
+  const url = document.getElementById('imageUrl').value;
+  const category = document.getElementById('imageCategory').value;
+  
+  const imageData = { title, url, category };
+  
+  if(editingImageElement) {
+    // Update existing image
+    const img = editingImageElement.querySelector('img');
+    img.src = url;
+    img.alt = title;
+    editingImageElement.dataset.category = category;
+    
+    // Update in localStorage
+    const portfolio = JSON.parse(localStorage.getItem('portfolio')) || [];
+    const index = Array.from(editingImageElement.parentNode.children).indexOf(editingImageElement);
+    portfolio[index] = imageData;
+    localStorage.setItem('portfolio', JSON.stringify(portfolio));
+    
+    showToast('Image updated successfully!');
+  } else {
+    // Add new image
+    const newImage = createPortfolioItem(imageData);
+    document.getElementById('portfolioGrid').appendChild(newImage);
+    
+    // Add to localStorage
+    const portfolio = JSON.parse(localStorage.getItem('portfolio')) || [];
+    portfolio.push(imageData);
+    localStorage.setItem('portfolio', JSON.stringify(portfolio));
+    
+    showToast('Image added successfully!');
+  }
+  
+  // Reset form and close modal
+  imageForm.reset();
+  imageModal.classList.add('hidden');
+  imageModal.classList.remove('flex');
+  editingImageElement = null;
+});
+// Initialize portfolio on page load
+document.addEventListener('DOMContentLoaded', () => {
+  loadPortfolio();
+  
+  // Add click event listener to category buttons
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const category = btn.dataset.category;
+      const items = document.querySelectorAll('#portfolioGrid > div');
+      
+      document.querySelectorAll('.category-btn').forEach(b => {
+        b.classList.remove('bg-primary');
+        b.classList.add('bg-gray-700');
+      });
+      
+      btn.classList.remove('bg-gray-700');
+      btn.classList.add('bg-primary');
+      
+      items.forEach(item => {
+        if (category === 'all' || item.dataset.category === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
+<section id="about" class="py-12 px-4">
+<div class="mb-8">
+<h2 class="heading text-2xl font-semibold text-center mb-4">من نحن</h2>
+<p class="text-gray-400 text-center mb-6">نصنع التميز منذ عام 2010، نجلب جمال الطبيعة إلى منزلك من خلال الأثاث الخشبي المصنوع بإتقان.</p>
+<div class="grid grid-cols-1 gap-4 mb-8">
+<div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+<h3 class="text-xl font-semibold mb-3">خبرتنا المتميزة</h3>
+<p class="text-gray-400">نفتخر بتقديم خدمات متميزة في صناعة الأثاث الخشبي الفاخر، مع التركيز على الجودة والإبداع في كل قطعة نصنعها.</p>
+</div>
+<div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+<h3 class="text-xl font-semibold mb-3">رضا العملاء</h3>
+<p class="text-gray-400">نسعى دائماً لتحقيق أعلى مستويات رضا العملاء من خلال تقديم منتجات تتجاوز توقعاتهم وخدمة عملاء استثنائية.</p>
+</div>
+</div>
+</div>
+<div class="rounded-lg overflow-hidden mb-8">
+<img src="https://public.readdy.ai/ai/img_res/6c691e12a934030f0911132f7bbf2041.jpg"
+class="w-full h-48 object-cover" alt="Our Workshop">
+</div>
+<div class="bg-gray-800 p-6 rounded-lg">
+<h3 class="text-xl font-semibold mb-4">لماذا تختارنا؟</h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<i class="ri-check-line text-primary mt-1"></i>
+<div>
+<h4 class="font-medium mb-1">خبرة متخصصة</h4>
+<p class="text-sm text-gray-400">فريق من الحرفيين المهرة مع خبرة تزيد عن 15 عامًا</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-check-line text-primary mt-1"></i>
+<div>
+<h4 class="font-medium mb-1">مواد عالية الجودة</h4>
+<p class="text-sm text-gray-400">نستخدم فقط أفضل أنواع الأخشاب والمواد المستدامة</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<i class="ri-check-line text-primary mt-1"></i>
+<div>
+<h4 class="font-medium mb-1">خدمة شاملة</h4>
+<p class="text-sm text-gray-400">من التصميم إلى التركيب، نتولى كل التفاصيل</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="contact" class="py-12 px-4 bg-gray-800">
+<h2 class="heading text-2xl font-semibold text-center mb-8">اتصل بنا</h2>
+<div class="max-w-md mx-auto">
+<div class="grid grid-cols-1 gap-4 mb-8">
+<div class="flex items-center gap-4 bg-gray-700/50 p-4 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-full">
+<i class="ri-phone-fill text-2xl text-primary"></i>
+</div>
+<div>
+<div class="text-sm text-gray-400 mb-1">اتصل بنا</div>
+<a href="tel:+212663395539" class="text-lg font-medium hover:text-primary transition-colors font-['Poppins'] tracking-wider">+212 663 395 539</a>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-gray-700/50 p-4 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-full">
+<i class="ri-mail-fill text-2xl text-primary"></i>
+</div>
+<div>
+<div class="text-sm text-gray-400 mb-1">البريد الإلكتروني</div>
+<a href="mailto:info@hakikibois.com" class="text-lg font-medium hover:text-primary transition-colors">info@hakikibois.com</a>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-gray-700/50 p-4 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-full">
+<i class="ri-map-pin-fill text-2xl text-primary"></i>
+</div>
+<div>
+<div class="text-sm text-gray-400 mb-1">العنوان</div>
+<address class="text-lg font-medium not-italic">شارع محمد الخامس، الدار البيضاء</address>
+</div>
+</div>
+</div>
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-sm text-gray-400 mb-1">الاسم الأول</label>
+<input type="text" placeholder="محمد" class="w-full px-4 py-2 rounded bg-gray-700 border-gray-600 text-white focus:border-primary focus:ring-primary">
+</div>
+<div>
+<label class="block text-sm text-gray-400 mb-1">اسم العائلة</label>
+<input type="text" placeholder="العلوي" class="w-full px-4 py-2 rounded bg-gray-700 border-gray-600 text-white focus:border-primary focus:ring-primary">
+</div>
+</div>
+<div>
+<label class="block text-sm text-gray-400 mb-1">البريد الإلكتروني</label>
+<input type="email" placeholder="example@domain.com" class="w-full px-4 py-2 rounded bg-gray-700 border-gray-600 text-white focus:border-primary focus:ring-primary">
+</div>
+<div>
+<label class="block text-sm text-gray-400 mb-1">رقم الهاتف</label>
+<input type="tel" placeholder="+212 XXX XXX XXX" class="w-full px-4 py-2 rounded bg-gray-700 border-gray-600 text-white focus:border-primary focus:ring-primary">
+</div>
+<div>
+<label class="block text-sm text-gray-400 mb-1">نوع الخدمة</label>
+<select class="w-full px-4 py-2 rounded bg-gray-700 border-gray-600 text-white focus:border-primary focus:ring-primary">
+<option value="">اختر نوع الخدمة</option>
+<option value="custom">تصميم مخصص</option>
+<option value="renovation">تجديد الأثاث</option>
+<option value="consultation">استشارة</option>
+</select>
+</div>
+<div>
+<label class="block text-sm text-gray-400 mb-1">رسالتك</label>
+<textarea placeholder="اكتب رسالتك هنا..." rows="4" class="w-full px-4 py-2 rounded bg-gray-700 border-gray-600 text-white focus:border-primary focus:ring-primary"></textarea>
+</div>
+<div class="flex items-start gap-2">
+<input type="checkbox" id="privacy" class="mt-1">
+<label for="privacy" class="text-sm text-gray-400">أوافق على سياسة الخصوصية وشروط الخدمة</label>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors flex items-center justify-center gap-2">
+<i class="ri-send-plane-fill"></i>
+إرسال الرسالة
+</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="bg-gray-800 text-white py-8 px-4 border-t border-gray-700">
+<div class="text-center mb-6">
+<a href="#" class="font-['Pacifico'] text-2xl">Hakikibois</a>
+</div>
+<div class="flex justify-center gap-4 mb-6">
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10">
+<i class="ri-facebook-fill text-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10">
+<i class="ri-instagram-line text-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10">
+<i class="ri-whatsapp-line text-lg"></i>
+</a>
+</div>
+<p class="text-center text-sm text-gray-400">© 2025 حقيقي بويز. جميع الحقوق محفوظة.</p>
+</footer>
+<script>
+// Intersection Observer for scroll animations
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('active');
+entry.target.classList.add('animate-fadeInUp');
+}
+});
+}, {
+threshold: 0.1
+});
+// Add animation classes to elements
+document.querySelectorAll('section').forEach(section => {
+section.classList.add('scroll-animate');
+observer.observe(section);
+});
+document.querySelectorAll('.heading').forEach(heading => {
+heading.classList.add('scroll-animate');
+observer.observe(heading);
+});
+document.querySelectorAll('.bg-gray-800').forEach(card => {
+card.classList.add('scroll-animate');
+observer.observe(card);
+});
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+mobileMenu.classList.add('hidden');
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+window.addEventListener('scroll', () => {
+const nav = document.querySelector('nav');
+if (window.scrollY > 50) {
+nav.classList.add('shadow-md');
+} else {
+nav.classList.remove('shadow-md');
+}
+});
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+const formData = new FormData(form);
+console.log(Object.fromEntries(formData));
+form.reset();
+const toast = document.createElement('div');
+toast.className = 'fixed bottom-4 left-1/2 -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-full';
+toast.textContent = 'Message sent successfully!';
+document.body.appendChild(toast);
+setTimeout(() => {
+toast.remove();
+}, 3000);
+});
+</script>
+</body>
+</html>
